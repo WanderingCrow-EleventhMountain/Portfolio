@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  background: rgb(23, 23, 23);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 415px) {
+
+  .hexagoncontainer{
+    height: 375px;
+    width: 320px;
+    max-width: 350px;
+  }
+
+  .hexagon{
+    margin: 0px -20.5px 0px;
+    height: 75px;
+    max-width: 180px;
+  }
+
+  .hexagon::before, .hexagon::after, .hexagonbg{
+    width: 80%;
+  }
+
+  .hexagontitle{
+    font-size: 16px;
+    width: 75%;
+  }
+
+  .due{
+    margin-right: -56px;
+    margin-left: 0px;
+  }
+
+  .tre{
+    margin-left: 15px;
+  }
+
+  .quattro{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cinque{
+    margin-left: -21px;
+    margin-right: -34px;
+  }
+}
