@@ -33,6 +33,8 @@ a:hover{
   transform: translateY(80px);
   width: 1000px;
   margin-bottom: 150px;
+  /*  */
+  transform-style: preserve-3d;
 }
 
 .hidden{
@@ -54,10 +56,14 @@ a:hover{
   z-index: 1;
   box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.1);
   color: rgb(230, 110, 13);
+  /*  */
+  transform-style: preserve-3d;
 }
 
 .hexagon:hover a{
   color: rgb(230, 110, 13);
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .hexagon img{
@@ -89,6 +95,14 @@ a:hover{
   font-size: 1.75em;
   transition: opacity 350ms;
   width: 100%;
+  /*  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform: translate3d(0,0,120px);
+  transition: 0.5s;
 }
 
 .hexagon::before,
@@ -148,15 +162,15 @@ a:hover{
   }
   25%{
     background: rgb(230, 110, 13);
-    transform: scale(1.020);
+    transform: scale(1.030);
   }
   50%{
     background: rgb(230, 110, 13);
-    transform: scale(1.035);
+    transform: scale(1.040);
   }
   75%{
     background: rgb(230, 110, 13);
-    transform: scale(1.020);
+    transform: scale(1.030);
   }
   100%{
     background: rgb(230, 110, 13);

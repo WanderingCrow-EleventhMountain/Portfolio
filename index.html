@@ -10,31 +10,39 @@
     </head>
     <body>
         <div class="hexagoncontainer">
-          <li class="hexagon uno">
+          <li class="hexagon uno" data-tilt>
             <img src="img/sfondone.jpg" alt="" class="hexagonbg">
             <div class="hexagontitle"><a href="portfolio-chisono/index.html">Chi <br> sono</a></div>
           </li>
-          <li class="hexagon due">
+          <li class="hexagon due" data-tilt>
             <img src="img/sfondone.jpg" alt="" class="hexagonbg">
             <div class="hexagontitle"><a href="portfolio-progetti/index.html">Progetti</a></div>
           </li>
-          <li class="hexagon tre">
+          <li class="hexagon tre" data-tilt>
             <img src="img/sfondone.jpg" alt="" class="hexagonbg">
             <div class="hexagontitle"><a href="portfolio-studi/index.html">Certificati</a></div>
           </li>
-          <li class="hexagon quattro">
+          <li class="hexagon quattro" data-tilt>
             <img src="img/sfondone.jpg" alt="" class="hexagonbg">
             <div class="hexagontitle"><a href="portfolio-dettagli/index.html">Dettagli</a></div>
           </li>
-          <li class="hexagon cinque">
+          <li class="hexagon cinque" data-tilt>
             <img src="img/sfondone.jpg" alt="" class="hexagonbg">
             <div class="hexagontitle"><a href="portfolio-contattami/index.html">Contattami</a></div>
           </li>
-          <li class="hexagon hidden">
-            <img src="img/yi.jpg" alt="" class="hexagonbg">
+          <li class="hexagon hidden" data-tilt>
+            <img src="" alt="" class="hexagonbg">
             <div class="hexagontitle">Project</div>
           </li>
         </div>
+        <!-- vanilla-tilt -->
+        <script src="vanilla-tilt.min.js" charset="utf-8"></script>
+        <script>
+          VanillaTilt.init(document.querySelector(".hexagon"), {
+           	max: 250,
+          	speed: 400
+          });
+        </script>
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- js -->
